@@ -8,8 +8,7 @@ using namespace std;
 int main(){
 
     int start = 0;
-    switch (start){
-        case 0:
+    if (start == 0){
         cout << "------------------------\n";
         cout << "| WELCOME TO TICTACTOE |\n";
         cout << "------------------------\n";
@@ -20,7 +19,12 @@ int main(){
         cout << "| 4) To do X           |\n";
         cout << "| 5) To do X           |\n";
         cout << "------------------------\n";
-
+        string playerinput;
+        getline(cin,playerinput);
+        start = stoi(playerinput);
+    }
+    if(start == 1){
+        cout << "NICE\n";
     }
 
     return 0;
