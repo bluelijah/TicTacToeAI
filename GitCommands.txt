@@ -8,3 +8,6 @@ git pull (pulls the stuff from the main)
 to run:
 g++ filename
 then run the code
+
+to create an exe file:
+g++ example.cpp -o example
