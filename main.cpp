@@ -24,7 +24,7 @@ int main(){
         start = stoi(playerinput);
     }
     if(start == 1){
-        cout << "NICE\n";
+        system("clear");
     }
 
     return 0;
