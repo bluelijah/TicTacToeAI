@@ -8,7 +8,12 @@ using namespace std;
 int main(){
 
     int start = 0;
+<<<<<<< HEAD
     if (start == 0){
+=======
+    if(start == 0){
+        system("clear");
+>>>>>>> d360bb1fa3a8f66baeb55fbb63ccb2c543e24087
         printMenu();
         string playerinput;
         getline(cin, playerinput);
@@ -17,22 +22,7 @@ int main(){
     }
     if(start == 1){
         system("clear");
-        cout<< "|=======================================|" << endl;
-        cout<< "|       The Rules of Tic Tac Toe        |" << endl;
-        cout<< "|=======================================|" << endl;
-        cout<< "| 1) You will always go first           |" << endl;
-        cout<< "|                                       |" << endl;
-        cout<< "| 2) Enter your row, then column        |" << endl;
-        cout<< "|                                       |" << endl;
-        cout<< "| 3) Try to line up 3 in a row          |" << endl;
-        cout<< "|                                       |" << endl;
-        cout<< "| 4) Get 3 in a row, you win!           |" << endl;
-        cout<< "|                                       |" << endl;
-        cout<< "| 5) Let your opponent get 3 in a row,  |" << endl;
-        cout<< "| You Lose!                             |" << endl;
-        cout<< "|                                       |" << endl;
-        cout<< "| Press Enter to continue:              |" << endl;
-        cout<< "|=======================================|" << endl;
+        printRules();
         string playerinput;
         getline(cin, playerinput);
         while(playerinput != ""){
