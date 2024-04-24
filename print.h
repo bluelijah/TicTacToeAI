@@ -26,22 +26,29 @@ void printMenu(){
         std::cout<< "|=======================================|" << '\n';
 }
 void printRules(){
-        cout<< "|=======================================|" << endl;
-        cout<< "|       The Rules of Tic Tac Toe        |" << endl;
-        cout<< "|=======================================|" << endl;
-        cout<< "| 1) You will always go first           |" << endl;
-        cout<< "|                                       |" << endl;
-        cout<< "| 2) Enter your row, then column        |" << endl;
-        cout<< "|                                       |" << endl;
-        cout<< "| 3) Try to line up 3 in a row          |" << endl;
-        cout<< "|                                       |" << endl;
-        cout<< "| 4) Get 3 in a row, you win!           |" << endl;
-        cout<< "|                                       |" << endl;
-        cout<< "| 5) Let your opponent get 3 in a row,  |" << endl;
-        cout<< "| You Lose!                             |" << endl;
-        cout<< "|                                       |" << endl;
-        cout<< "| Press Enter to continue:              |" << endl;
-        cout<< "|=======================================|" << endl;
+        cout<< "|=======================================|" << '\n';
+        cout<< "|       The Rules of Tic Tac Toe        |" << '\n';
+        cout<< "|=======================================|" << '\n';
+        cout<< "| 1) You will always go first           |" << '\n';
+        cout<< "|                                       |" << '\n';
+        cout<< "| 2) Enter your row, then column        |" << '\n';
+        cout<< "|                                       |" << '\n';
+        cout<< "| 3) Try to line up 3 in a row          |" << '\n';
+        cout<< "|                                       |" << '\n';
+        cout<< "| 4) Get 3 in a row, you win!           |" << '\n';
+        cout<< "|                                       |" << '\n';
+        cout<< "| 5) Let your opponent get 3 in a row,  |" << '\n';
+        cout<< "| You Lose!                             |" << '\n';
+        cout<< "|                                       |" << '\n';
+        cout<< "| Press Enter to continue:              |" << '\n';
+        cout<< "|=======================================|" << '\n';
 }
 
+void printGameOver(){
+        cout<< "|=======================================|" << '\n';
+        cout<< "|+++++++++++++++++++++++++++++++++++++++|" << '\n';
+        cout<< "|              GAME OVER                |" << '\n';
+        cout<< "|+++++++++++++++++++++++++++++++++++++++|" << '\n';
+        cout<< "|=======================================|" << '\n';
+}
 #endif
