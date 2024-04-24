@@ -2,6 +2,7 @@
 //#include "GameState.h"
 #include "tictactoe.h"
 #include "board.h"
+#include "print.h"
 using namespace std;
 
 int main(){
@@ -16,22 +17,7 @@ int main(){
     // game.play(1, 1);
 
     //do{
-        cout<< "|=======================================|" << endl;
-        cout<< "|        Welcome to Tic Tac Toe         |" << endl;
-        cout<< "|=======================================|" << endl;
-        cout<< "|      Please Choose an option 1-5      |" << endl;
-        cout<< "|                                       |" << endl;
-        cout<< "| 1) How to Play                        |" << endl;
-        cout<< "|                                       |" << endl;
-        cout<< "| 2) Play Game P:1 VS P:2               |" << endl;
-        cout<< "|                                       |" << endl;
-        cout<< "| 3) Play Game P:1 VS Beginner AI       |" << endl;
-        cout<< "|                                       |" << endl;
-        cout<< "| 4) Play Game P:1 VS Advance AI        |" << endl;
-        cout<< "|                                       |" << endl;
-        cout<< "| 5) Game End - come back soon 🙂       |" << endl;
-        cout<< "|                                       |" << endl;
-        cout<< "|=======================================|" << endl;
+        void printMenu();
     //}
     //while(opt == 2){}
     //while(opt == 1){}
