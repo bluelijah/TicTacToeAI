@@ -37,7 +37,7 @@ int main(){
     }
     if(start == 5){
         system("clear");
-        printEnd();
+        printGameOver();
     }
 
 
