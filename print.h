@@ -20,7 +20,7 @@ void printMenu(){
         std::cout<< "|                                       |" << '\n';
         std::cout<< "| 4) Play Game P:1 VS Advance AI        |" << '\n';
         std::cout<< "|                                       |" << '\n';
-        std::cout<< "| 5) Game End - come back soon 🙂       |" << '\n';
+        std::cout<< "| 5) Game End - come back soon :}       |" << '\n';
         std::cout<< "|                                       |" << '\n';
         std::cout<< "|=======================================|" << '\n';
 }

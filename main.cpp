@@ -9,7 +9,7 @@ int main(){
 
     int start = 0;
     if (start == 0){
-        void printmenu();
+        printMenu();
         string playerinput;
         getline(cin, playerinput);
         start = 0;
