@@ -8,12 +8,11 @@ using namespace std;
 int main(){
 
     int start = 0;
-<<<<<<< HEAD
-    if (start == 0){
-=======
+
+
     if(start == 0){
         system("clear");
->>>>>>> d360bb1fa3a8f66baeb55fbb63ccb2c543e24087
+
         printMenu();
         string playerinput;
         getline(cin, playerinput);
