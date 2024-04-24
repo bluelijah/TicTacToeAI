@@ -9,7 +9,6 @@ void printMenu(){
         std::cout<< "|        Welcome to Tic Tac Toe         |" << '\n';
         std::cout<< "|=======================================|" << '\n';
         std::cout<< "|                                       |" << '\n';
-        std::cout<< "|                                       |" << '\n';
         std::cout<< "|      Please Choose an option 1-5      |" << '\n';
         std::cout<< "|     +===========================+     |" << '\n';
         std::cout<< "|                                       |" << '\n';

@@ -6,56 +6,61 @@
 using namespace std;
 
 int main(){
-    TicTacToe game;
 
-    game.play();
+    int start = 0;
+    if (start == 0){
+        void printmenu();
+        string playerinput;
+        getline(cin, playerinput);
+        start = 0;
+        start = stoi(playerinput);
+    }
+    if(start == 1){
+        system("clear");
+        cout<< "|=======================================|" << endl;
+        cout<< "|       The Rules of Tic Tac Toe        |" << endl;
+        cout<< "|=======================================|" << endl;
+        cout<< "| 1) You will always go first           |" << endl;
+        cout<< "|                                       |" << endl;
+        cout<< "| 2) Enter your row, then column        |" << endl;
+        cout<< "|                                       |" << endl;
+        cout<< "| 3) Try to line up 3 in a row          |" << endl;
+        cout<< "|                                       |" << endl;
+        cout<< "| 4) Get 3 in a row, you win!           |" << endl;
+        cout<< "|                                       |" << endl;
+        cout<< "| 5) Let your opponent get 3 in a row,  |" << endl;
+        cout<< "| You Lose!                             |" << endl;
+        cout<< "|                                       |" << endl;
+        cout<< "| Press Enter to continue:              |" << endl;
+        cout<< "|=======================================|" << endl;
+        string playerinput;
+        getline(cin, playerinput);
+        while(playerinput != ""){
+            cout << "Press Enter to continue:" << endl;
+            getline(cin, playerinput);
+            if(playerinput == ""){
+                start = 0;
+                break;
+            }
+        }
+        
+    }
+    if(start == 2){
+        TicTacToe game;
+        game.play();
+    }
+    if(start == 5){
+        cout<< "|=======================================|" << endl;
+        cout<< "|+++++++++++++++++++++++++++++++++++++++|" << endl;
+        cout<< "|              GAME OVER                |" << endl;
+        cout<< "|+++++++++++++++++++++++++++++++++++++++|" << endl;
+        cout<< "|=======================================|" << endl;
+    }
+
 
     return 0;
     // GameState game;
 
     // game.play(0, 0);
     // game.play(1, 1);
-
-    //do{
-        void printMenu();
-    //}
-    //while(opt == 2){}
-    //while(opt == 1){}
-    //while(opt == 3){}
-    //while(opt == 4){}
-    //while(opt == 5){
-        //cout<< "|=======================================|" << endl;
-        //cout<< "|+++++++++++++++++++++++++++++++++++++++|" << endl;
-        //cout<< "|              GAME OVER                |" << endl;
-        //cout<< "|+++++++++++++++++++++++++++++++++++++++|" << endl;
-        //cout<< "|=======================================|" << endl;
-
-
-
-
 }
-
-
-
-//     int start = 0;
-//     if (start == 0){
-//         cout << "------------------------\n";
-//         cout << "| WELCOME TO TICTACTOE |\n";
-//         cout << "------------------------\n";
-//         cout << "|         TYPE:        |\n";
-//         cout << "| 1) For the Rules     |\n";
-//         cout << "| 2) To do X           |\n";
-//         cout << "| 3) To do X           |\n";
-//         cout << "| 4) To do X           |\n";
-//         cout << "| 5) To do X           |\n";
-//         cout << "------------------------\n";
-//         string playerinput;
-//         getline(cin,playerinput);
-//         start = stoi(playerinput);
-//     }
-//     if(start == 1){
-//         system("clear");
-//     }
-
-//     return 0;
-// }
