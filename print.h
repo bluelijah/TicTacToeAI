@@ -24,6 +24,9 @@ void printMenu(){
         std::cout<< "| 5) Game End - come back soon :}       |" << '\n';
         std::cout<< "|                                       |" << '\n';
         std::cout<< "|=======================================|" << '\n';
+        std::cout<< "|                                       |" << '\n';
+        cout << "Your Choice Here: ";
+
 }
 void printRules(){
         cout<< "|=======================================|" << '\n';
@@ -39,9 +42,9 @@ void printRules(){
         cout<< "|                                       |" << '\n';
         cout<< "| 5) Let your opponent get 3 in a row,  |" << '\n';
         cout<< "| You Lose!                             |" << '\n';
-        cout<< "|                                       |" << '\n';
-        cout<< "| Press Enter to continue:              |" << '\n';
         cout<< "|=======================================|" << '\n';
+        cout<< "                                         " << '\n';
+        cout<< "Press Enter to continue: ";
 }
 
 void printGameOver(){
