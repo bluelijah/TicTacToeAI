@@ -5,46 +5,48 @@
 using namespace std;
 
 
+
+
 void printMenu(){
         std::cout<< "|=======================================|" << '\n';
-        std::cout<< "|        Welcome to Tic Tac Toe         |" << '\n';
+        std::cout<< "|\033[35m        Welcome to Tic Tac Toe         \033[0m|" << '\n';
         std::cout<< "|=======================================|" << '\n';
         std::cout<< "|                                       |" << '\n';
-        std::cout<< "|      Please Choose an option 1-5      |" << '\n';
+        std::cout<< "|\033[35m      Please Choose an option 1-5      \033[0m|" << '\n';
         std::cout<< "|     +===========================+     |" << '\n';
         std::cout<< "|                                       |" << '\n';
-        std::cout<< "| 1) How to Play                        |" << '\n';
+        std::cout<< "|\033[35m 1) How to Play                        \033[0m|" << '\n';
         std::cout<< "|                                       |" << '\n';
-        std::cout<< "| 2) Play Game P:1 VS P:2               |" << '\n';
+        std::cout<< "|\033[35m 2) Play Game P:1 VS P:2               \033[0m|" << '\n';
         std::cout<< "|                                       |" << '\n';
-        std::cout<< "| 3) Play Game P:1 VS Beginner AI       |" << '\n';
+        std::cout<< "|\033[35m 3) Play Game P:1 VS Beginner AI       \033[0m|" << '\n';
         std::cout<< "|                                       |" << '\n';
-        std::cout<< "| 4) Play Game P:1 VS Advance AI        |" << '\n';
+        std::cout<< "|\033[35m 4) Play Game P:1 VS Advance AI        \033[0m|" << '\n';
         std::cout<< "|                                       |" << '\n';
-        std::cout<< "| 5) Game End - come back soon :}       |" << '\n';
+        std::cout<< "|\033[35m 5) Game End - come back soon :}       \033[0m|" << '\n';
         std::cout<< "|                                       |" << '\n';
         std::cout<< "|=======================================|" << '\n';
         std::cout<< "                                         " << '\n';
-        cout << "Your Choice Here: ";
+        cout << "\033[35mYour Choice Here: \033[0m";
 
 }
 void printRules(){
         cout<< "|=======================================|" << '\n';
-        cout<< "|       The Rules of Tic Tac Toe        |" << '\n';
+        cout<< "|\033[35m       The Rules of Tic Tac Toe        \033[0m|" << '\n';
         cout<< "|=======================================|" << '\n';
-        cout<< "| 1) You will always go first           |" << '\n';
+        cout<< "|\033[35m 1) You will always go first           \033[0m|" << '\n';
         cout<< "|                                       |" << '\n';
-        cout<< "| 2) Enter your row, then column        |" << '\n';
+        cout<< "|\033[35m 2) Enter your row, then column        \033[0m|" << '\n';
         cout<< "|                                       |" << '\n';
-        cout<< "| 3) Try to line up 3 in a row          |" << '\n';
+        cout<< "|\033[35m 3) Try to line up 3 in a row          \033[0m|" << '\n';
         cout<< "|                                       |" << '\n';
-        cout<< "| 4) Get 3 in a row, you win!           |" << '\n';
+        cout<< "|\033[35m 4) Get 3 in a row, you win!           \033[0m|" << '\n';
         cout<< "|                                       |" << '\n';
-        cout<< "| 5) Let your opponent get 3 in a row,  |" << '\n';
-        cout<< "| You Lose!                             |" << '\n';
+        cout<< "|\033[35m 5) Let your opponent get 3 in a row,  \033[0m|" << '\n';
+        cout<< "|\033[35m You Lose!                             \033[0m|" << '\n';
         cout<< "|=======================================|" << '\n';
         cout<< "                                         " << '\n';
-        cout<< "Press Enter to continue: ";
+        cout<< "\033[35mPress Enter to continue: \033[0m";
 }
 
 void printGameOver(){
