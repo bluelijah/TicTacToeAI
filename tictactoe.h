@@ -3,17 +3,6 @@
 
 #include "board.h"
 
-
-struct Vec{
-    int x;
-    int y;
-
-    Vec(int x, int y){
-        this->x = x;
-        this->y = y;
-    }
-};
-
 struct TicTacToe{
 
     Board board;
