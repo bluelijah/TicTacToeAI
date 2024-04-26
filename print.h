@@ -24,7 +24,7 @@ void printMenu(){
         std::cout<< "| 5) Game End - come back soon :}       |" << '\n';
         std::cout<< "|                                       |" << '\n';
         std::cout<< "|=======================================|" << '\n';
-        std::cout<< "|                                       |" << '\n';
+        std::cout<< "                                         " << '\n';
         cout << "Your Choice Here: ";
 
 }

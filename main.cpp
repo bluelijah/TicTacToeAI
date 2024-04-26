@@ -38,7 +38,7 @@ int main(){
                 } else{
                     while(playerinput != ""){
                         system("clear");
-                        cout << "Invalid. Press Enter to continue:" << endl;
+                        cout << "Invalid. Press Enter to continue: ";
                         getline(cin, playerinput);
                         if(playerinput == ""){
                             start = 0;
@@ -51,19 +51,64 @@ int main(){
             case 2:
                 system("clear");
                 game.play();
-                start = 0;
+                cout << "Press Enter to continue to the menu: ";
+                cin.ignore();
+                getline(cin, playerinput);
+                if(playerinput == ""){
+                    start = 0;
+                } else{
+                    while(playerinput != ""){
+                        system("clear");
+                        cout << "Invalid. Press Enter to continue to the menu: ";
+                        getline(cin, playerinput);
+                        if(playerinput == ""){
+                            start = 0;
+                            break;
+                        }
+                    }   
+                }
                 break;
             
             case 3:
                 system("clear");
                 game2.play();
-                start = 0;
+                cout << "Press Enter to continue to the menu: ";
+                cin.ignore();
+                getline(cin, playerinput);
+                if(playerinput == ""){
+                    start = 0;
+                } else{
+                    while(playerinput != ""){
+                        system("clear");
+                        cout << "Invalid. Press Enter to continue to the menu: ";
+                        getline(cin, playerinput);
+                        if(playerinput == ""){
+                            start = 0;
+                            break;
+                        }
+                    }   
+                }
                 break;
 
             case 4:
                 system("clear");
                 game1.play();
-                start = 0;
+                cout << "Press Enter to continue to the menu: ";
+                cin.ignore();
+                getline(cin, playerinput);
+                if(playerinput == ""){
+                    start = 0;
+                } else{
+                    while(playerinput != ""){
+                        system("clear");
+                        cout << "Invalid. Press Enter to continue to the menu: ";
+                        getline(cin, playerinput);
+                        if(playerinput == ""){
+                            start = 0;
+                            break;
+                        }
+                    }   
+                }
                 break;
             
             case 5:
@@ -72,10 +117,5 @@ int main(){
                 return 0;
             
         }
-        
-        // GameState game;
-
-        // game.play(0, 0);
-        // game.play(1, 1);
     }
 }
