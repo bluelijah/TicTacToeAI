@@ -1,8 +1,14 @@
 #include <iostream>
-//#include "GameState.h"
 #include "tictactoe.h"
 #include "board.h"
 #include "print.h"
+// #include "easybot.cpp"
+// #include "bot.cpp"
+#include <iostream>
+#include <iostream>
+#include <vector>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 
 int main(){
@@ -12,7 +18,7 @@ int main(){
     TicTacToe game;
     while(true){
         switch(start){
-            
+
             case 0:
                 system("clear");
                 printMenu();
@@ -41,10 +47,15 @@ int main(){
                 break;
             
             case 2:
-                
                 game.play();
                 start = 0;
                 break;
+
+            // case 3:
+            //     TicTacToeBot bot;
+            //     bot.play();
+            //     return 0;
+
             
             case 5:
                 system("clear");
