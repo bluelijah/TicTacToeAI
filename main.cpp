@@ -46,11 +46,12 @@ int main(){
                 }
                 break;
             
-            case 2:
+            case 2:{
                 system("clear");
+                TicTacToe game;
                 game.play();
                 cout << "Press Enter to continue to the menu: ";
-                cin.ignore();
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Clear input buffer
                 getline(cin, playerinput);
                 if(playerinput == ""){
                     start = 0;
@@ -66,6 +67,7 @@ int main(){
                     }   
                 }
                 break;
+            }
             
             case 3:{
                 system("clear");
