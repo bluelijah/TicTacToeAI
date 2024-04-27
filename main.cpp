@@ -5,8 +5,6 @@
 #include "print.h"
 // #include "easybot.cpp"
 // #include "bot.cpp"
-#include <iostream>
-#include <iostream>
 #include <vector>
 #include <cstdlib>
 #include <ctime>
@@ -114,6 +112,7 @@ int main(){
             case 5:
                 system("clear");
                 printGameOver();
+                Bye();
                 return 0;
             
         }
