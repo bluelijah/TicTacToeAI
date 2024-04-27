@@ -116,7 +116,7 @@ int main(){
             case 5:
                 system("clear");
                 printGameOver();
-                Bye();
+                // Bye();
                 return 0;
             
         }

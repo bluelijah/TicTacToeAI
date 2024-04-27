@@ -34,25 +34,25 @@ using namespace std;
 // }
 
 void printMenu(){
-        std::cout << BLU << "============================" << RESET << '\n';
-        std::cout << BLU << "|  " << RESET << BRED << "Welcome To Tic Tac Toe" << RESET << BLU << "  |" << RESET << '\n';
-        std::cout << BLU << "============================" << RESET << '\n';
+        std::cout << BLU << "  ============================" << RESET << '\n';
+        std::cout << BLU << "  |  " << RESET << BRED << "Welcome To Tic Tac Toe" << RESET << BLU << "  |" << RESET << '\n';
+        std::cout << BLU << "  ============================" << RESET << '\n';
         std::cout << '\n';
-        std::cout << BLU << "----------------------------" << RESET << '\n';
-        std::cout << BLU << "|" << RESET << BRED <<" 1. How to play?          "<< RESET << BLU << "|" << RESET << '\n';
-        std::cout << BLU << "----------------------------" << RESET << '\n';
-        std::cout << BLU << "----------------------------" << RESET << '\n';
-        std::cout << BLU << "|" << RESET<< BRED <<" 2. Player vs Player      "<< RESET<< BLU << "|" << RESET << '\n';
-        std::cout << BLU << "----------------------------" << RESET << '\n';
+        std::cout << BLU << "--------------------------------" << RESET << '\n';
+        std::cout << BLU << "|" << RESET << BRED <<" 1. How to play?          "<< RESET << BLU << "    |" << RESET << '\n';
+        std::cout << BLU << "--------------------------------" << RESET << '\n';
+        std::cout << BLU << "--------------------------------" << RESET << '\n';
+        std::cout << BLU << "|" << RESET<< BRED <<" 2. Player vs Player      "<< RESET<< BLU << "    |" << RESET << '\n';
+        std::cout << BLU << "--------------------------------" << RESET << '\n';
         std::cout << BLU << "--------------------------------" << RESET << '\n';
         std::cout << BLU << "|" << RESET << BRED << " 3. Player vs Computer (easy)"<< RESET << BLU << " |" << RESET << '\n';
         std::cout << BLU << "--------------------------------" << RESET << '\n';
         std::cout << BLU << "--------------------------------" << RESET << '\n';
         std::cout << BLU << "|" << RESET << BRED << " 4. Player vs Computer (hard)"<< RESET << BLU << " |" << RESET << '\n';
         std::cout << BLU << "--------------------------------" << RESET << '\n';
-        std::cout << BLU << "----------------------------" << RESET << '\n';
-        std::cout << BLU << "|" << RESET << BRED << " 5. Exit Game             "<< RESET << BLU << "|" << RESET << '\n';
-        std::cout << BLU << "----------------------------" << RESET << '\n';
+        std::cout << BLU << "--------------------------------" << RESET << '\n';
+        std::cout << BLU << "|" << RESET << BRED << " 5. Exit Game             "<< RESET << BLU << "    |" << RESET << '\n';
+        std::cout << BLU << "--------------------------------" << RESET << '\n';
         std::cout << BRED << "Enter your choice here: " << RESET;
 }
 
