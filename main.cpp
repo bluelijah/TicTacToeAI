@@ -67,8 +67,9 @@ int main(){
                 }
                 break;
             
-            case 3:
+            case 3:{
                 system("clear");
+                TicTacToeBotEasy game2; //Resets the state of the game so user can play multiple times
                 game2.play();
                 cout << "Press Enter to continue to the menu: ";
                 cin.ignore();
@@ -87,9 +88,11 @@ int main(){
                     }   
                 }
                 break;
+            }
 
-            case 4:
+            case 4: {
                 system("clear");
+                TicTacToeBot game1; //Resets the state of the game so user can play multiple times
                 game1.play();
                 cout << "Press Enter to continue to the menu: ";
                 cin.ignore();
@@ -108,6 +111,7 @@ int main(){
                     }   
                 }
                 break;
+            }
             
             case 5:
                 system("clear");

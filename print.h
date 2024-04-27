@@ -48,12 +48,12 @@ void printMenu(){
         std::cout << BLU << "|" << RESET << BRED << " 3. Player vs Computer (easy)"<< RESET << BLU << " |" << RESET << '\n';
         std::cout << BLU << "--------------------------------" << RESET << '\n';
         std::cout << BLU << "--------------------------------" << RESET << '\n';
-        std::cout << BLU << "|" << RESET << BRED << " 2. Player vs Computer (hard)"<< RESET << BLU << " |" << RESET << '\n';
+        std::cout << BLU << "|" << RESET << BRED << " 4. Player vs Computer (hard)"<< RESET << BLU << " |" << RESET << '\n';
         std::cout << BLU << "--------------------------------" << RESET << '\n';
         std::cout << BLU << "----------------------------" << RESET << '\n';
         std::cout << BLU << "|" << RESET << BRED << " 5. Exit Game             "<< RESET << BLU << "|" << RESET << '\n';
         std::cout << BLU << "----------------------------" << RESET << '\n';
-        std::cout << BRED << "Enter your choice here: " << RESET << '\n';
+        std::cout << BRED << "Enter your choice here: " << RESET;
 }
 
 void printRules() {
@@ -84,7 +84,7 @@ void printRules() {
 void printGameOver(){
         cout<< BLU << "|=======================================|" << RESET << '\n';
         cout<< BLU << "|+++++++++++++++++++++++++++++++++++++++|" << RESET << '\n';
-        cout<< BLU << "|"<< RESET << GRN << "              GAME OVER                "<< RESET << BLU << "|" << RESET <<'\n';
+        cout<< BLU << "|"<< RESET << BRED << "              GAME OVER                "<< RESET << BLU << "|" << RESET <<'\n';
         cout<< BLU << "|+++++++++++++++++++++++++++++++++++++++|" << RESET << '\n';
         cout<< BLU << "|=======================================|" << RESET << '\n';
 }
