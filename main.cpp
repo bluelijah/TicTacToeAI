@@ -48,7 +48,7 @@ int main(){
             
             case 2:{
                 system("clear");
-                TicTacToe game;
+                TicTacToe game; //Resets the state of the game so user can play multiple times
                 game.play();
                 cout << "Press Enter to continue to the menu: ";
                 std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Clear input buffer
