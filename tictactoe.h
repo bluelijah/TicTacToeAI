@@ -15,6 +15,8 @@ struct TicTacToe{
         done = false;
     }
 
+    TicTacToe(int size) : board(size), player1(true), done(false){}
+    
     void play(){
         while(!done) {
             system("clear");
