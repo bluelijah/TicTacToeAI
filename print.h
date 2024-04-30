@@ -94,5 +94,8 @@ void Bye(){
         std::cout << BRED << "Thanks for playing!" << RESET << '\n';
 }
 
+void invalid(){
+        std::cout << BRED << "INVALID OPTION CHOOSE AGAIN!" << RESET << '\n';
+    }
 
 #endif

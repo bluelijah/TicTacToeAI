@@ -340,7 +340,6 @@ public:
 
         if (isMaximizingPlayer) 
         {
-
             int maxEval = std::numeric_limits<int>::min();
             for (int i = 0; i < state.size; ++i) {
                 for (int j = 0; j < state.size; ++j) 
@@ -427,7 +426,8 @@ private:
     GameState game;
 
 public:
-    TicTacToeBotEasy() : game(3) {}
+    // Constructor that takes the size of the board as a parameter
+    TicTacToeBotEasy(int boardSize) : game(boardSize) {}
 
     void play() {
         std::cout << "Welcome to Tic Tac Toe!\n";
@@ -475,6 +475,7 @@ public:
         }
     }
 
+    // Implementation of botMove remains the same
     void botMove() {
         std::vector<Vec> availableMoves;
         for (int i = 0; i < game.size; ++i) {
@@ -485,7 +486,6 @@ public:
             }
         }
 
-        // If the board is empty, the bot picks a random move.
         if (availableMoves.empty()) {
             srand(static_cast<unsigned int>(time(0)));
             int randIdx = rand() % (game.size * game.size);
@@ -493,7 +493,6 @@ public:
             return;
         }
 
-        // Check if bot needs to block the player from winning
         for (const auto& move : availableMoves) {
             GameState temp = game;
             temp.play(move.x, move.y);
@@ -503,8 +502,6 @@ public:
             }
         }
 
-
-        // Check if bot can win in the next move
         for (const auto& move : availableMoves) {
             GameState temp = game;
             temp.play(move.x, move.y);
@@ -514,9 +511,6 @@ public:
             }
         }
 
-        
-
-        // If no winning moves, pick a random available move
         srand(static_cast<unsigned int>(time(0)));
         int randIdx = rand() % availableMoves.size();
         game.play(availableMoves[randIdx].x, availableMoves[randIdx].y);

@@ -16,7 +16,7 @@ int main(){
     string playerinput; 
     TicTacToe game;
     TicTacToeBot game1;
-    TicTacToeBotEasy game2;
+    
     while(true){
         switch(start){
 
@@ -48,8 +48,16 @@ int main(){
             
             case 2:{
                 system("clear");
-                TicTacToe game; //Resets the state of the game so user can play multiple times
+                int boardSize;
+                cout << "Enter the size of the board (3, 4, or 5): ";
+                cin >> boardSize;
+                if (boardSize < 3 || boardSize > 5){
+                    invalid();
+                    break;
+                }
+                TicTacToe game(boardSize);
                 game.play();
+                
                 cout << "Press Enter to continue to the menu: ";
                 std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Clear input buffer
                 getline(cin, playerinput);
@@ -71,8 +79,16 @@ int main(){
             
             case 3:{
                 system("clear");
-                TicTacToeBotEasy game2; //Resets the state of the game so user can play multiple times
-                game2.play();
+                int boardSize;
+                cout << "Enter the size of the board (3, 4, or 5): ";
+                cin >> boardSize;
+                if (boardSize < 3 || boardSize > 5){
+                    invalid();
+                    break;
+                }
+                TicTacToeBotEasy game(boardSize);
+                game.play();
+            
                 cout << "Press Enter to continue to the menu: ";
                 cin.ignore();
                 getline(cin, playerinput);
